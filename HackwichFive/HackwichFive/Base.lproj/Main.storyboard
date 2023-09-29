@@ -15,14 +15,43 @@
                     <view key="view" contentMode="scaleToFill" id="3Wi-ox-O63">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgD-Wo-Rtn">
+                                <rect key="frame" x="101" y="121" width="192" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7s-84-cDg">
+                                <rect key="frame" x="101" y="220" width="192" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0W-vl-Ecr">
+                                <rect key="frame" x="97" y="477" width="200" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="See My Favorite Shows"/>
+                                <connections>
+                                    <action selector="buttonTwo:" destination="TVR-99-vHS" eventType="touchUpInside" id="dL5-DB-83n"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zTy-wh-Knu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="VLk-b1-mTV"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="O7s-84-cDg" id="OfK-5v-gvo"/>
+                        <outlet property="topLabel" destination="PgD-Wo-Rtn" id="BuP-Dg-oLJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tE-ja-t8v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-94.366197183098592"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="-94.366197183098592"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9F7-WV-Qdf">
@@ -106,11 +135,11 @@
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-751.4084507042254"/>
         </scene>
-        <!--Item 2-->
+        <!--Fave Shows-->
         <scene sceneID="Le4-mf-1g8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l4Z-eV-TFa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Ejd-5L-ETV"/>
+                    <tabBarItem key="tabBarItem" title="Fave Shows" image="tv.fill" catalog="system" id="Ejd-5L-ETV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VXR-Ki-yqo">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -128,6 +157,7 @@
     </scenes>
     <resources>
         <image name="fork.knife.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="tv.fill" catalog="system" width="128" height="95"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

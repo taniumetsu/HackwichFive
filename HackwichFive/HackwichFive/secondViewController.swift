@@ -9,13 +9,22 @@ import UIKit
 
 class secondViewController: UIViewController {
 
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        topLabel.text = "My Favorite Shows:"
     }
     
-
+    @IBAction func buttonTwo(_ sender: Any) {
+        var currentIndex = 0
+        var favoriteShowsArray : [String] = ["911", "New Amsterdam", "Great British Baking Show", "Golden Girls", "Inuyasha"]
+        bottomLabel.text = favoriteShowsArray[2]
+        bottomLabel.textColor = UIColor.black
+    }
+    
     /*
     // MARK: - Navigation
 
