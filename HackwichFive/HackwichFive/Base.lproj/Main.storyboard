@@ -27,7 +27,7 @@
                                 <rect key="frame" x="101" y="220" width="192" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0W-vl-Ecr">
@@ -72,7 +72,7 @@
                                 <rect key="frame" x="54" y="263" width="274" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZc-Yd-lKi">
@@ -81,7 +81,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="See My Favorite Foods"/>
                                 <connections>
-                                    <action selector="buttonOne:" destination="q3q-Ga-hbD" eventType="touchUpInside" id="oBF-Gh-H9W"/>
+                                    <action selector="buttonOne:" destination="q3q-Ga-hbD" eventType="touchUpInside" id="Ur2-Nl-zEo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -91,6 +91,7 @@
                     <navigationItem key="navigationItem" id="hM1-cv-q0z"/>
                     <connections>
                         <outlet property="bottomLabel" destination="qUf-XX-W85" id="V0P-za-zTT"/>
+                        <outlet property="buttonLabel" destination="qZc-Yd-lKi" id="Ha8-im-DxU"/>
                         <outlet property="topLabel" destination="HNm-Zh-TCY" id="gzu-bO-Mwj"/>
                     </connections>
                 </viewController>
