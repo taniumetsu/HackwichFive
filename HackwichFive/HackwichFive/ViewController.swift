@@ -19,10 +19,10 @@ class ViewController: UIViewController {
 
     }
     var currentIndex = 0
+    let favoriteFoodsArray : [String] = ["Panna Cotta", "Lasagna", "Tonkatsu", "Sushi", "Strawberry Shortcake"]
     
     @IBAction func buttonOne(_ sender: Any) {
         
-    let favoriteFoodsArray : [String] = ["Panna Cotta", "Lasagna", "Tonkatsu", "Sushi", "Strawberry Shortcake"]
 // #1 the favorite food arrawy variable to set the list of my favorite foods numbers 1-5
         bottomLabel.text = favoriteFoodsArray[currentIndex]
 //#2 the base for setting cycling through the array in the bottom label

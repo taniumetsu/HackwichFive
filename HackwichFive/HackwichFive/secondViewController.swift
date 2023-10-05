@@ -20,10 +20,10 @@ class secondViewController: UIViewController {
     }
     
         var currentIndex = 0
+        let favoriteShowsArray : [String] = ["911", "New Amsterdam", "Great British Baking Show", "Golden Girls", "Inuyasha"]
+
     
     @IBAction func buttonTwo(_ sender: Any){
-        
-        let favoriteShowsArray : [String] = ["911", "New Amsterdam", "Great British Baking Show", "Golden Girls", "Inuyasha"]
         
         bottomLabel.text = favoriteShowsArray[currentIndex]
         
