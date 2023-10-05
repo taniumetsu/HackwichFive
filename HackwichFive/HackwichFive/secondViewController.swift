@@ -11,6 +11,7 @@ class secondViewController: UIViewController {
     
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
+    @IBOutlet weak var buttonLabel: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,16 +19,24 @@ class secondViewController: UIViewController {
         topLabel.text = "My Favorite Shows:"
     }
     
-    @IBAction func buttonTwo(_ sender: Any) {
         var currentIndex = 0
-        var favoriteShowsArray : [String] = ["911", "New Amsterdam", "Great British Baking Show", "Golden Girls", "Inuyasha"]
+    
+    @IBAction func buttonTwo(_ sender: Any){
         
-        bottomLabel.text = favoriteShowsArray[2]
+        let favoriteShowsArray : [String] = ["911", "New Amsterdam", "Great British Baking Show", "Golden Girls", "Inuyasha"]
         
-        if currentIndex < favoriteShowsArray.count {
-            bottomLabel.text = favoriteShowsArray[currentIndex]
-            currentIndex += 2
+        bottomLabel.text = favoriteShowsArray[currentIndex]
+        
+        if currentIndex < favoriteShowsArray.count
+        {
+            buttonLabel.setTitle("Next", for:UIControl.State.normal)
+            currentIndex += 1
             
+        }
+        else
+        {
+            print("button has been disabled")
+            (buttonLabel!).isEnabled=false
         }
         
         /*
